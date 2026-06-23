@@ -1,0 +1,3 @@
+telethon>=1.26,<2.0
+aiohttp>=3.9,<4.0
+cryptg>=0.4.0        # C-extension for AES — ~10x faster file transfers

@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: tg-file-stream
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    healthCheckPath: /health
+    # Free tier: service spins down after 15 min inactivity.
+    # Add an UptimeRobot monitor on /health every 5 min to keep it alive.
+    envVars:
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: SECRET_KEY
+        sync: false
+      - key: PUBLIC_URL
+        sync: false
+      - key: ALLOWED_USERS
+        sync: false
+      - key: PORT
+        value: "10000"
