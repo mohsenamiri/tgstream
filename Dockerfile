@@ -21,5 +21,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app
 
 # 7) نقطه شروع کانتینر
-# اگر فایل اصلی‌ات main.py نیست، این خط را عوض کن
-CMD ["python", "bot.py"]
+CMD ["python", "app.py"]
