@@ -21,4 +21,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app
 
 # 7) نقطه شروع کانتینر
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]
